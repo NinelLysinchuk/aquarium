@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+}
+
+.fish {
+    position: fixed;
+    right: -200px;
+}
+
+.fish_swim_rtl {
+
+	animation-name: animation_swim_rtl;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	}
+	
+.fish_swim_ltr {
+	1transform: scaleX(-1);
+	animation-name: animation_swim_ltr;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	}
+
+.fish_speed_fast 	{ animation-duration: 12s; }
+.fish_speed_medium 	{ animation-duration: 16s; }
+.fish_speed_slow 	{ animation-duration: 24s; }
+	
+@keyframes animation_swim_rtl {
+	
+	0% {right: -200px;}
+	50% { 1right: 10%; margin-top: -60px;}
+	70% { 1right: 60%; margin-top: 20px;}
+	100% { right: 100%; }
+}
+
+@keyframes animation_swim_ltr {
+	
+	0% {left: -200px;}
+	40% { margin-top: -40px;}
+	70% { margin-top: 30px;}
+	100% { left: 100%; }
+}
+
+body {
+	background: no-repeat url(https://gallery.yopriceville.com/var/albums/Backgrounds/Underwater_Sea_Background.jpg);
+	background-size: cover;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	}
+.seaweed{
+	position: bottom center;
+	
+}
